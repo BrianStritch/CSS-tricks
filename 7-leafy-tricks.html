@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ups and downs</title>
+    <title>missing slice</title>
 </head>
 
 <body>
@@ -21,20 +21,17 @@
         <button id="btn"><a href="submit-btn-collapse.html">submit btn collapse</a> </button>
 
     </section>
-
     <section id="outer">
-        <div class="left"></div>
-        <div class="center"></div>
         <div class="right"></div>
-
+        <div class="middle"></div>
+        <div class="left"></div>
     </section>
-
-
+    
     <style>
         body{
             background-image: url(assets/images/css.jpeg);
         }
-        #btn {
+        #btn{
             padding: 5px 30px;
             margin-top: 10px;
             margin-bottom: 10px;
@@ -44,13 +41,11 @@
             text-decoration: none;
             font-size: 15px;
         }
-
-        #btn a {
+        #btn a{
             color: white;
             text-decoration: none;
         }
-
-        #nav {
+         #nav {
             margin-bottom: 10px;
         }
 
@@ -58,46 +53,42 @@
             position: relative;
             height: 325px;
             width: 400px;
-            background: #62306d;
+            background:#0b2429;
             margin: 0;
+            padding-top: 50px;
+           
         }
-
+        .right{
+          position:absolute;
+          z-index:3;
+          background:#F3AC3C;
+          height:150px;
+          width:150px;
+          border-radius:70% 0 60% 0;
+          margin:75px 75px 0 170px;
+          float:right;
+        }
         .left {
-            background: #f7ec7d;
-            height: 100px;
-            width: 100px;
-            position: absolute;
-            top: 150px;
-            left: 50px;
-            border-radius: 0 0 50% 50%;
-
+          z-index:2;
+          position:absolute;
+          background:#998235;
+          height:150px;
+          width:150px;
+          border-radius:70% 0 60% 0;
+          margin:75px 0 0 120px
         }
-
-        .center {
-            background: #f7ec7d;
-            height: 100px;
-            width: 100px;
-            position: absolute;
-            top: 25px;
-            left: 150px;
-
-            border-radius: 50% 50% 0 0;
-            margin-top: 25px;
-
-        }
-
-        .right {
-            background: #f7ec7d;
-            height: 100px;
-            width: 100px;
-            border-radius: 0 0 50% 50%;
-            position: absolute;
-            top: 150px;
-            left: 250px;
-        }
+        .middle{
+          position:absolute;
+          z-index:1;
+          background:#1A4341;
+          height:150px;
+          width:150px;
+          border-radius: 70% 0 60% 0;
+          margin:75px 0 0 75px;
+        } 
+        
     </style>
-
-
+    
 </body>
 
 </html>

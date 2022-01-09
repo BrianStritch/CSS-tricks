@@ -122,8 +122,8 @@
 
 @keyframes squish {
     100%{
-        left: -50%;
-        right: -50%;
+        left: -51%;
+        right: -51%;
         top: 45%;
         bottom: 45%;
         border-radius: 50px;
@@ -132,8 +132,8 @@
 
 @keyframes progress {
     100%{
-        left: -50%;
-        right: -50%;
+        left: -51%;
+        right: -51%;
         
     }
 }

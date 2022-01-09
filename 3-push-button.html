@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>push button</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>push button</title>
 </head>
+
 <body>
-  <section id="nav">    
+  <section id="nav">
     <button id="btn"><a href="index.html">Home menu</a> </button>
     <button id="btn"><a href="1-simply-square.html">simply square</a> </button>
     <button id="btn"><a href="2-carrom-squares.html">carrom square</a> </button>
@@ -15,8 +17,9 @@
     <button id="btn"><a href="4-ups-and-downs.html">ups and downs</a> </button>
     <button id="btn"><a href="5-acid-rain.html">acid rain</a> </button>
     <button id="btn"><a href="6-missing-slice.html">missing slice</a> </button>
-    <button id="btn"><a href="submit-btn-collapse.html">submit btn collapse</a> </button>         
-  
+    <button id="btn"><a href="7-leafy-tricks.html">leafy tricks</a> </button>
+    <button id="btn"><a href="submit-btn-collapse.html">submit btn collapse</a> </button>
+
   </section>
   <section id="outer">
     <div class="box"></div>
@@ -24,56 +27,77 @@
     <div class="inner"></div>
     <div class="outer"></div>
   </section>
-    
 
 
-<style>
-  #nav{
-    margin-bottom: 10px;
-  }
-  #outer{
-    position: relative;
-    height: 325px;
-    width: 400px;
-    background:#6592cf;
-    margin:0;
-  }
-  .box{
-    width:300px;
-    height:150px;
-    background:#243d83;
-    position:absolute;
-    top:75px;
-    left:50px;
-    z-index:1;
-  }
-  .inner {
-    height:50px;
-    width:50px;
-    background:#eeb850;
-    position:absolute;
-    top:125px;
-    left:175px;
-    border-radius:100%;
-    z-index:3;
-  }
-  .outer{
-    height:150px;
-    width:150px;
-    background:#243d83;
-    border: 50px solid #6592cf;
-    border-radius:100%;
-    position:absolute;
-    top:25px;
-    left:75px;
-    z-index:2;
-  }
-  
-  body{
-    
-    
-  }
-</style>
+
+  <style>
+    body{
+            background-image: url(assets/images/css.jpeg);
+        }
+    #btn {
+      padding: 5px 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: blue;
+      color: white;
+      border-radius: 30%;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    #btn a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #nav {
+      margin-bottom: 10px;
+    }
+
+    #outer {
+      position: relative;
+      height: 325px;
+      width: 400px;
+      background: #6592cf;
+      margin: 0;
+    }
+
+    .box {
+      width: 300px;
+      height: 150px;
+      background: #243d83;
+      position: absolute;
+      top: 75px;
+      left: 50px;
+      z-index: 1;
+    }
+
+    .inner {
+      height: 50px;
+      width: 50px;
+      background: #eeb850;
+      position: absolute;
+      top: 125px;
+      left: 175px;
+      border-radius: 100%;
+      z-index: 3;
+    }
+
+    .outer {
+      height: 150px;
+      width: 150px;
+      background: #243d83;
+      border: 50px solid #6592cf;
+      border-radius: 100%;
+      position: absolute;
+      top: 25px;
+      left: 75px;
+      z-index: 2;
+    }
+
+    body {}
+  </style>
 
 </body>
+
 </html>
